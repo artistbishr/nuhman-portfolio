@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Identity | Nukta Creative</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --primary-blue: #00d2ff;
+            --accent-teal: #2dd4bf;
+            --text-main: #ffffff;
+            --text-dim: #8892b0;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        .project-container {
+            width: 95%;
+            max-width: 1100px;
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border-radius: 40px;
+            padding: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Navigation Header */
+        .project-nav { margin-bottom: 40px; }
+        .back-link {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Header Style */
+        .sub-header-tag {
+            color: var(--accent-teal);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 8px;
+        }
+        h1 { font-size: 2.2rem; margin: 0; font-weight: 700; }
+        h1 span { color: var(--primary-blue); text-shadow: 0 0 10px rgba(0, 210, 255, 0.6); }
+        .project-description { color: var(--text-dim); margin: 25px 0 50px 0; line-height: 1.6; max-width: 700px; }
+
+        /* BRAND SECTION LAYOUT */
+        .brand-section {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .brand-label {
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            text-transform: uppercase;
+            color: var(--primary-blue);
+            font-weight: 800;
+            font-size: 0.75rem;
+            letter-spacing: 4px;
+            border-right: 1px solid rgba(0, 210, 255, 0.2);
+            padding-left: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+        }
+
+        .brand-visuals {
+            flex: 1;
+            background: #0f172a; /* Light background like image_2e7132.jpg */
+            padding: 35px;
+            border-radius: 35px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Grid for visuals */
+        .project-showcase {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        .showcase-item {
+            border-radius: 20px;
+            overflow: hidden;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .showcase-item img { width: 100%; display: block; border-radius: 20px; }
+        .full-width { grid-column: span 2; margin-bottom: 10px; }
+
+        /* Lightbox Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.95);
+            backdrop-filter: blur(15px);
+            justify-content: center; align-items: center;
+        }
+        .modal-img { max-width: 90%; max-height: 90%; border-radius: 15px; }
+
+        @media (max-width: 850px) {
+            .brand-section { flex-direction: column; }
+            .brand-label { 
+                writing-mode: horizontal-tb; 
+                transform: none; 
+                border-right: none; 
+                border-bottom: 1px solid var(--primary-blue);
+                padding: 0 0 10px 0;
+                justify-content: flex-start;
+            }
+            .project-showcase { grid-template-columns: 1fr; }
+            .full-width { grid-column: span 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="project-container">
+        <div class="project-nav">
+            <a href="portfolio.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+        </div>
+
+        <div class="project-header">
+            <span class="sub-header-tag">Identity</span>
+            <h1>Brand <span>Identity</span></h1>
+            <p class="project-description">
+                Creating cohesive visual systems that define brand character. This showcase includes logo design, packaging concepts, and comprehensive brand guidelines.
+            </p>
+        </div>
+
+        <!-- RAIDBA MILK PRODUCTS SECTION -->
+        <div class="brand-section">
+            <div class="brand-label">Raiba Milk Products</div>
+            <div class="brand-visuals">
+                <div class="project-showcase">
+                    <div class="showcase-item full-width" onclick="openModal(this.querySelector('img').src)">
+                        <img src="Images/Untitled-1-02.jpg" alt="Raiba Main Logo">
+                    </div>
+                    <div class="showcase-item" onclick="openModal(this.querySelector('img').src)">
+                        <img src="Images/Raiba Milk Products-01.jpg" alt="Raiba Variation 1">
+                    </div>
+                    <div class="showcase-item" onclick="openModal(this.querySelector('img').src)">
+                        <img src="Images/Free_Key_Chain_Mockup_2.jpg" alt="Raiba Variation 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-img" id="modalImg">
+    </div>
+
+    <script>
+        function openModal(src) {
+            document.getElementById('modal').style.display = "flex";
+            document.getElementById('modalImg').src = src;
+        }
+    </script>
+</body>
+</html>

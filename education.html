@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuhman Bishr - Experience & Education</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        neon: '#0ea5e9',
+                        darkBg: '#0f172a',
+                        glassBg: 'rgba(30, 41, 59, 0.7)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: rgba(15, 23, 42, 0.5); border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #0ea5e9; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-darkBg min-h-screen flex items-center justify-center p-4 lg:p-8 text-slate-300 font-sans relative overflow-hidden">
+    
+    <!-- Background Gradient Blobs -->
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-neon rounded-full mix-blend-screen filter blur-[128px] opacity-20"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-screen filter blur-[128px] opacity-20"></div>
+
+    <!-- Main Glass Container -->
+    <div class="relative w-full max-w-6xl h-auto md:h-[750px] bg-glassBg backdrop-blur-xl border border-slate-700/50 rounded-[2.5rem] shadow-2xl flex overflow-hidden z-10">
+        
+        <!-- Sidebar Navigation -->
+        <nav class="hidden md:flex absolute left-8 top-1/2 transform -translate-y-1/2 bg-slate-900/80 border border-slate-700/50 rounded-full py-8 px-4 flex-col gap-8 shadow-[0_0_20px_rgba(14,165,233,0.15)] z-20">
+            <a href="index.html" class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-300 transition-all hover:scale-110">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <!-- a href="portfolio.html" class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-300 transition-all hover:scale-110">
+                <i class="fa-solid fa-briefcase"></i>
+            </a> -->
+            <a href="skills.html" class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-300 transition-all hover:scale-110">
+                <i class="fa-solid fa-layer-group"></i>
+            </a>
+            <!-- ACTIVE (Education/Experience) -->
+            <a href="education.html" class="w-10 h-10 flex items-center justify-center rounded-full bg-sky-900/50 text-neon shadow-[0_0_15px_rgba(14,165,233,0.4)] transition-all hover:scale-110">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </a>
+            <!-- INACTIVE (Contact) - This one should be gray -->
+            <a href="contact.html" class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-300 transition-all hover:scale-110">
+            <i class="fa-solid fa-envelope"></i>
+</a>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 h-full flex flex-col p-8 md:p-12 md:pl-40 relative w-full overflow-y-auto custom-scrollbar">
+            
+            <div class="mb-10">
+                <h2 class="text-teal-400 tracking-widest text-xs font-bold uppercase mb-2">Resume</h2>
+                <h1 class="text-4xl font-bold text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]">Experience & <span class="text-neon drop-shadow-[0_0_10px_rgba(14,165,233,0.6)]">Education</span></h1>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                
+                <!-- Experience Section -->
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-briefcase text-neon"></i> Experience
+                    </h3>
+                    
+                    <div class="space-y-8 border-l-2 border-slate-700/50 ml-3 pl-8 relative">
+                        
+                        <!-- Work Item 1 (IPB Books) -->
+                        <div class="relative">
+                            <div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-neon shadow-[0_0_10px_rgba(14,165,233,0.8)] border-4 border-darkBg"></div>
+                            <span class="text-xs font-bold text-teal-400 uppercase">February 2025 — Present</span>
+                            <h4 class="text-white font-bold mt-1">Senior Graphic Designer</h4>
+                            <p class="text-slate-400 text-sm font-medium">IPB Books</p>
+                            <ul class="text-slate-500 text-xs mt-2 list-disc ml-4 space-y-1">
+                                <li>Designed complete interior layouts and engaging front covers for ipb books.</li>
+                                <li>Managed the editorial layout and primary cover design for Pravasi Risala magazine.</li>
+                                <li>Created tailored social media posters to promote articles, new issues, and books.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Work Item 2 (Darul Aman) -->
+                        <div class="relative">
+                            <div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-slate-700 border-4 border-darkBg"></div>
+                            <span class="text-xs font-bold text-slate-500 uppercase">While Studying</span>
+                            <h4 class="text-white font-bold mt-1">Senior Graphic Designer</h4>
+                            <p class="text-slate-400 text-sm font-medium">Darul Aman Educational Trust</p>
+                            <ul class="text-slate-500 text-xs mt-2 list-disc ml-4 space-y-1">
+                                <li>Designed a variety of social media graphics for institutional marketing</li>
+                                <li>tailored digital promotional materials for the Ihyaul Aman Students' Union.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Work Item 3 (Impress Offset) -->
+                        <div class="relative">
+                            <div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-slate-700 border-4 border-darkBg"></div>
+                            <span class="text-xs font-bold text-slate-500 uppercase">January 2020 — March 2021</span>
+                            <h4 class="text-white font-bold mt-1">Junior Graphic Designer</h4>
+                            <p class="text-slate-400 text-sm font-medium">Impress Offset</p>
+                            <ul class="text-slate-500 text-xs mt-2 list-disc ml-4 space-y-1">
+                                <li>Designed high-quality business stationery, event invitations, and promotional materials using industry-standard design software.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-graduation-cap text-neon"></i> Education
+                    </h3>
+                    
+                    <div class="space-y-8 border-l-2 border-slate-700/50 ml-3 pl-8 relative">
+
+                        <!-- Education Item 1 -->
+                        <div class="relative">
+                            <div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-slate-700 border-4 border-darkBg"></div>
+                            <span class="text-xs font-bold text-slate-500 uppercase">Completed</span>
+                            <h4 class="text-white font-bold mt-1">Diploma in Graphic Designing</h4>
+                            <p class="text-slate-400 text-sm font-medium">Diginet Online School</p>
+                        </div>
+
+                        <!-- Education Item 2 -->
+                        <div class="relative">
+                            <div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-slate-700 border-4 border-darkBg"></div>
+                            <span class="text-xs font-bold text-slate-500 uppercase">2016 — 2023</span>
+                            <h4 class="text-white font-bold mt-1">Masters in Islamic Science</h4>
+                            <p class="text-slate-400 text-sm font-medium">Madin Academy, Malappuram</p>
+                        </div>
+
+                        <!-- Education Item 3 -->
+                        <div class="relative">
+                            <div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-slate-700 border-4 border-darkBg"></div>
+                            <span class="text-xs font-bold text-slate-500 uppercase">2016 — 2023</span>
+                            <h4 class="text-white font-bold mt-1">Bachelor's of Islamic Science</h4>
+                            <p class="text-slate-400 text-sm font-medium">Darul Aman Educational Trust, Edavannappara</p>
+                        </div>
+
+                        <!-- Education Item 4 -->
+                        <div class="relative">
+                            <div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-slate-700 border-4 border-darkBg"></div>
+                            <span class="text-xs font-bold text-slate-500 uppercase">2018 — 2021</span>
+                            <h4 class="text-white font-bold mt-1">Bachelor of Arts, Arabic</h4>
+                            <p class="text-slate-400 text-sm font-medium">University of Calicut</p>
+                        </div>
+
+                        <!-- Education Item 5 -->
+                        <div class="relative">
+                            <div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-slate-700 border-4 border-darkBg"></div>
+                            <span class="text-xs font-bold text-slate-500 uppercase">2016 — 2018</span>
+                            <h4 class="text-white font-bold mt-1">Higher Secondary Education</h4>
+                            <p class="text-slate-400 text-sm font-medium">Govt. School, Areekode</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

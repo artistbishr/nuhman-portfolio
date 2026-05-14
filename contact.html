@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuhman Bishr - Contact</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        neon: '#0ea5e9',
+                        darkBg: '#0f172a',
+                        glassBg: 'rgba(30, 41, 59, 0.7)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg min-h-screen flex items-center justify-center p-4 lg:p-8 text-slate-300 font-sans relative overflow-hidden">
+    
+    <!-- Background Gradient Blobs -->
+    <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-neon rounded-full mix-blend-screen filter blur-[128px] opacity-20"></div>
+    <div class="absolute bottom-1/4 left-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-screen filter blur-[128px] opacity-20"></div>
+
+    <!-- Main Glass Container -->
+    <div class="relative w-full max-w-6xl h-auto md:h-[750px] bg-glassBg backdrop-blur-xl border border-slate-700/50 rounded-[2.5rem] shadow-2xl flex overflow-hidden z-10">
+        
+        <!-- Sidebar Navigation (Now with 5 buttons!) -->
+        <nav class="hidden md:flex absolute left-8 top-1/2 transform -translate-y-1/2 bg-slate-900/80 border border-slate-700/50 rounded-full py-8 px-4 flex-col gap-8 shadow-[0_0_20px_rgba(14,165,233,0.15)] z-20">
+            <a href="index.html" class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-300 transition-all hover:scale-110">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <!--a href="portfolio.html" class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-300 transition-all hover:scale-110">
+                <i class="fa-solid fa-briefcase"></i>
+            </a> -->
+            <a href="skills.html" class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-300 transition-all hover:scale-110">
+                <i class="fa-solid fa-layer-group"></i>
+            </a>
+            <a href="education.html" class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-300 transition-all hover:scale-110">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </a>
+            <!-- ACTIVE (Contact) -->
+            <a href="contact.html" class="w-10 h-10 flex items-center justify-center rounded-full bg-sky-900/50 text-neon shadow-[0_0_15px_rgba(14,165,233,0.4)] transition-all hover:scale-110">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 h-full flex flex-col md:flex-row p-8 md:p-12 md:pl-40 relative w-full items-center">
+            
+            <!-- Left Side: Contact Info -->
+            <div class="w-full md:w-5/12 flex flex-col justify-center mb-10 md:mb-0 pr-0 md:pr-10">
+                <h2 class="text-teal-400 tracking-widest text-xs font-bold uppercase mb-2">Let's Connect</h2>
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]">Get In <span class="text-neon drop-shadow-[0_0_10px_rgba(14,165,233,0.6)]">Touch</span></h1>
+                
+                <p class="text-slate-400 text-sm leading-relaxed mb-10">
+                    Whether you need a complete brand identity, custom typography, or stunning layout designs, I am currently available for freelance projects and exciting full-time opportunities.
+                </p>
+
+                <div class="flex flex-col gap-6 mb-10">
+                    <!-- Email -->
+                     <a href="mailto:artistbishr@gmail.com" target="_blank" class="block group">
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-12 h-12 rounded-full bg-slate-800/50 border border-slate-700 flex items-center justify-center text-neon group-hover:bg-neon group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-slate-500 text-xs font-bold uppercase tracking-wider">Email</p>
+                            <a href="mailto:artistbishr@gmai.com" class="text-white font-medium hover:text-neon transition-colors">artistbishr@gmail.com</a>
+                        </div>
+                    </div>
+                    </a>
+
+                    <!-- Phone / WhatsApp -->
+                     <a href="https://wa.link/mdp3m9" target="_blank" class="block group">
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-12 h-12 rounded-full bg-slate-800/50 border border-slate-700 flex items-center justify-center text-neon group-hover:bg-neon group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <p class="text-slate-500 text-xs font-bold uppercase tracking-wider">Phone / WhatsApp</p>
+                            <p class="text-white font-medium">+91 7736 770 096</p>
+                        </div>
+                    </div>
+                    </a>
+
+                    <!-- Location -->
+                    <a href="https://www.google.com/maps/search/Tirur,+Malappuram,+Kerala,+India" target="_blank" class="block group">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-800/50 border border-slate-700 flex items-center justify-center text-neon group-hover:bg-neon group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                            <p class="text-slate-500 text-xs font-bold uppercase tracking-wider">Location</p>
+                            <p class="text-white font-medium">Tirur, Malappuram, Kerala, India</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="flex gap-4">
+                    <a href="https://www.linkedin.com/in/nuhman-bishr-70912b273/" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-[#0077b5] hover:shadow-[0_0_15px_rgba(0,119,181,0.5)] transition-all duration-300">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.behance.net/nuhmanbishr" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-[#1769ff] hover:shadow-[0_0_15px_rgba(23,105,255,0.5)] transition-all duration-300">
+                        <i class="fa-brands fa-behance"></i>
+                    </a>
+                    <a href="https://www.instagram.com/artistbishr/" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-[#E1306C] hover:shadow-[0_0_15px_rgba(225,48,108,0.5)] transition-all duration-300">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://in.pinterest.com/artistbishr/_pins/" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-[#E60023] hover:shadow-[0_0_15px_rgba(230,0,35,0.5)] transition-all duration-300">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side: Contact Form -->
+            <div class="w-full md:w-7/12 flex items-center justify-center">
+                <form class="w-full bg-slate-800/40 border border-slate-700/50 rounded-2xl p-8 shadow-inner">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <!-- Name Input -->
+                        <div class="flex flex-col gap-2">
+                            <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">Your Name</label>
+                            <input type="text" placeholder="Name here" class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-slate-300 focus:outline-none focus:border-neon focus:ring-1 focus:ring-neon transition-all">
+                        </div>
+                        
+                        <!-- Email Input -->
+                        <div class="flex flex-col gap-2">
+                            <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">Your Email</label>
+                            <input type="email" placeholder="mail@example.com" class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-slate-300 focus:outline-none focus:border-neon focus:ring-1 focus:ring-neon transition-all">
+                        </div>
+                    </div>
+
+                    <!-- Subject Input -->
+                    <div class="flex flex-col gap-2 mb-6">
+                        <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">Subject</label>
+                        <input type="text" placeholder="Design Project Inquiry" class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-slate-300 focus:outline-none focus:border-neon focus:ring-1 focus:ring-neon transition-all">
+                    </div>
+
+                    <!-- Message Textarea -->
+                    <div class="flex flex-col gap-2 mb-8">
+                        <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">Message</label>
+                        <textarea rows="4" placeholder="Tell me about your project..." class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-slate-300 focus:outline-none focus:border-neon focus:ring-1 focus:ring-neon transition-all resize-none"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="button" class="w-full px-8 py-3 bg-neon text-white font-bold rounded-lg shadow-[0_0_20px_rgba(14,165,233,0.4)] hover:bg-sky-400 hover:shadow-[0_0_30px_rgba(14,165,233,0.6)] transition-all duration-300 transform hover:-translate-y-1">
+                        Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+                    </button>
+
+                </form>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>

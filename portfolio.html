@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuhman Bishr - Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        neon: '#0ea5e9',
+                        darkBg: '#0f172a',
+                        glassBg: 'rgba(30, 41, 59, 0.7)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: rgba(15, 23, 42, 0.5); border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #0ea5e9; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-darkBg min-h-screen flex items-center justify-center p-4 lg:p-8 text-slate-300 font-sans relative overflow-hidden">
+    
+    <!-- Background Gradient Blobs -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-neon rounded-full mix-blend-screen filter blur-[128px] opacity-20"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-purple-600 rounded-full mix-blend-screen filter blur-[128px] opacity-20"></div>
+
+    <!-- Main Glass Container -->
+    <div class="relative w-full max-w-6xl h-auto md:h-[750px] bg-glassBg backdrop-blur-xl border border-slate-700/50 rounded-[2.5rem] shadow-2xl flex overflow-hidden z-10">
+        
+        <!-- Sidebar Navigation -->
+        <nav class="hidden md:flex absolute left-8 top-1/2 transform -translate-y-1/2 bg-slate-900/80 border border-slate-700/50 rounded-full py-8 px-4 flex-col gap-8 shadow-[0_0_20px_rgba(14,165,233,0.15)] z-20">
+            <a href="index.html" class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-300 transition-all hover:scale-110">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="portfolio.html" class="w-10 h-10 flex items-center justify-center rounded-full bg-sky-900/50 text-neon shadow-[0_0_15px_rgba(14,165,233,0.4)] transition-all hover:scale-110">
+                <i class="fa-solid fa-briefcase"></i>
+            </a>
+            <a href="skills.html" class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-300 transition-all hover:scale-110">
+                <i class="fa-solid fa-layer-group"></i>
+            </a>
+            <a href="education.html" class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-300 transition-all hover:scale-110">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </a>
+            <a href="contact.html" class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-300 transition-all hover:scale-110">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 h-full flex flex-col p-8 md:p-12 md:pl-40 relative w-full">
+            
+            <div class="mb-8">
+                <h2 class="text-teal-400 tracking-widest text-xs font-bold uppercase mb-2">My Work</h2>
+                <h1 class="text-4xl font-bold text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]">Featured <span class="text-neon drop-shadow-[0_0_10px_rgba(14,165,233,0.6)]">Projects</span></h1>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 overflow-y-auto custom-scrollbar pr-4 pb-4 h-full">
+                
+                <!-- Brand Identity -->
+                <a href="brand-identity.html" class="project-card">
+                <div class="group bg-slate-800/40 border border-slate-700/50 rounded-2xl overflow-hidden hover:border-neon/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(14,165,233,0.2)]">
+                    <div class="h-40 overflow-hidden relative bg-slate-900">
+                        <img src="Images/Branding.jpg" alt="Identity" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80"></div>
+                    </div>
+                    <div class="p-5">
+                    <span class="text-xs font-bold text-teal-400 mb-1 block">Identity</span>
+                    <!-- Change mb-2 to mb-0 or mb-0.5 to close the gap -->
+                    <h3 class="text-white font-bold text-lg mb-0">Brand Identity</h3>
+                    <p class="text-slate-500 text-xs italic">Logos, packages, guidelines</p>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Event Collateral -->
+                 <a href="#" class="project-card">
+                <div class="group bg-slate-800/40 border border-slate-700/50 rounded-2xl overflow-hidden hover:border-neon/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(14,165,233,0.2)]">
+                    <div class="h-40 overflow-hidden relative bg-slate-900">
+                        <img src="Images/Events.jpg" alt="Cultural" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80"></div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-purple-400 mb-1 block">Cultural</span>
+                        <h3 class="text-white font-bold text-lg mb-0">Event Collateral</h3>
+                        <p class="text-slate-500 text-xs italic mb-0">Posters, Sahityotsav, banners</p>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Marketing & Print -->
+                 <a href="#" class="project-card">
+                <div class="group bg-slate-800/40 border border-slate-700/50 rounded-2xl overflow-hidden hover:border-neon/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(14,165,233,0.2)]">
+                    <div class="h-40 overflow-hidden relative bg-slate-900">
+                        <img src="Images/Marketing.jpg" alt="Marketing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80"></div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-neon mb-1 block">Print</span>
+                        <h3 class="text-white font-bold text-lg mb-0">Marketing Media</h3>
+                        <p class="text-slate-500 text-xs italic mb-0">Flyers, brochures, ads</p>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Custom Typography -->
+                 <a href="#" class="project-card">
+                <div class="group bg-slate-800/40 border border-slate-700/50 rounded-2xl overflow-hidden hover:border-neon/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(14,165,233,0.2)]">
+                    <div class="h-40 overflow-hidden relative bg-slate-900">
+                        <img src="Images/Typeset.jpg" alt="Typography" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80"></div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-pink-400 mb-1 block">Type Design</span>
+                        <h3 class="text-white font-bold text-lg mb-0">Custom Typography</h3>
+                        <p class="text-slate-500 text-xs italic mb-0">Fonts, lettering projects</p>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Digital Marketing -->
+                 <a href="#" class="project-card">
+                <div class="group bg-slate-800/40 border border-slate-700/50 rounded-2xl overflow-hidden hover:border-neon/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(14,165,233,0.2)]">
+                    <div class="h-40 overflow-hidden relative bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop" alt="Digital" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80"></div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-orange-400 mb-1 block">Digital</span>
+                        <h3 class="text-white font-bold text-lg mb-0">Marketing Graphics</h3>
+                        <p class="text-slate-500 text-xs italic mb-0">Online campaigns, ads</p>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Publication Graphics -->
+                 <a href="#" class="project-card">
+                <div class="group bg-slate-800/40 border border-slate-700/50 rounded-2xl overflow-hidden hover:border-neon/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(14,165,233,0.2)]">
+                    <div class="h-40 overflow-hidden relative bg-slate-900">
+                        <img src="Images/Print.jpg" alt="Publication" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80"></div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-cyan-400 mb-1 block">Publication</span>
+                        <h3 class="text-white font-bold text-lg mb-0">Publication Graphics</h3>
+                        <p class="text-slate-500 text-xs italic mb-0">Books, magazines, layouts</p>
+                    </div>
+                </div>
+                </a>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
