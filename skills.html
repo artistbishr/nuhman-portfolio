@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuhman - Skills</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        neon: '#0ea5e9', // Cyberpunk blue
+                        darkBg: '#0f172a',
+                        glassBg: 'rgba(30, 41, 59, 0.7)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg min-h-screen flex items-center justify-center p-4 lg:p-8 text-slate-300 font-sans relative overflow-hidden">
+    
+    <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-neon rounded-full mix-blend-screen filter blur-[128px] opacity-20"></div>
+    <div class="absolute bottom-1/4 left-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-screen filter blur-[128px] opacity-20"></div>
+
+    <div class="relative w-full max-w-6xl h-auto md:h-[700px] bg-glassBg backdrop-blur-xl border border-slate-700/50 rounded-[2.5rem] shadow-2xl flex overflow-hidden z-10">
+        
+        <nav class="hidden md:flex absolute left-8 top-1/2 transform -translate-y-1/2 bg-slate-900/80 border border-slate-700/50 rounded-full py-8 px-4 flex-col gap-8 shadow-[0_0_20px_rgba(14,165,233,0.15)] z-20">
+            <a href="index.html" class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-300 transition-all hover:scale-110">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <!-- a href="portfolio.html" class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-300 transition-all hover:scale-110">
+                <i class="fa-solid fa-briefcase"></i>
+            </a> -->
+            <a href="skills.html" class="w-10 h-10 flex items-center justify-center rounded-full bg-sky-900/50 text-neon shadow-[0_0_15px_rgba(14,165,233,0.4)] transition-all hover:scale-110">
+                <i class="fa-solid fa-layer-group"></i>
+            </a>
+            <a href="education.html" class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-300 transition-all hover:scale-110">
+                <i class="fa-solid fa-graduation-cap"></i>
+            <a href="contact.html" class="w-10 h-10 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-300 transition-all hover:scale-110">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </nav>
+
+        <main class="flex-1 h-full flex flex-col md:flex-row gap-12 p-8 md:p-16 md:pl-40 relative w-full items-center">
+            
+            <div class="w-full md:w-5/12 flex flex-col justify-center">
+                <h2 class="text-teal-400 tracking-widest text-xs font-bold uppercase mb-2">My Expertise</h2>
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]">Professional<br><span class="text-neon drop-shadow-[0_0_10px_rgba(14,165,233,0.6)]">Skills</span></h1>
+                
+                <p class="text-slate-400 text-sm leading-relaxed mb-8">
+                    As a dedicated graphic designer, I have developed a strong command of Adobe Photoshop and Illustrator to build striking visual identities. My expertise extends across InDesign for precise layouts, Premiere for video editing, custom font creation, and advanced AI image generation, allowing me to execute any creative concept with technical precision.
+                </p>
+
+                <div class="hidden md:flex items-center gap-4 bg-slate-800/50 border border-slate-700/50 rounded-2xl p-4 w-max shadow-inner">
+                    <div class="w-12 h-12 rounded-full bg-slate-900 flex items-center justify-center text-neon border border-slate-700">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <div>
+                        <p class="text-white font-bold text-sm">Creative Toolkit</p>
+                        <p class="text-slate-500 text-xs">Precision & Aesthetics</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-7/12 flex flex-col gap-6 justify-center">
+                
+                <div class="group">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-sm font-medium text-slate-200 flex items-center gap-2"><i class="fa-brands fa-adobe text-[#31A8FF]"></i> Adobe Photoshop</span>
+                        <span class="text-sm font-bold text-neon group-hover:scale-110 transition-transform">95%</span>
+                    </div>
+                    <div class="w-full bg-slate-900 rounded-full h-2 border border-slate-700 shadow-inner">
+                        <div class="bg-gradient-to-r from-neon to-cyan-300 h-1.5 mt-[1px] ml-[1px] rounded-full shadow-[0_0_10px_rgba(14,165,233,0.6)]" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-sm font-medium text-slate-200 flex items-center gap-2"><i class="fa-brands fa-adobe text-[#FF9A00]"></i> Adobe Illustrator</span>
+                        <span class="text-sm font-bold text-neon group-hover:scale-110 transition-transform">90%</span>
+                    </div>
+                    <div class="w-full bg-slate-900 rounded-full h-2 border border-slate-700 shadow-inner">
+                        <div class="bg-gradient-to-r from-neon to-cyan-300 h-1.5 mt-[1px] ml-[1px] rounded-full shadow-[0_0_10px_rgba(14,165,233,0.6)]" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-sm font-medium text-slate-200 flex items-center gap-2"><i class="fa-brands fa-adobe text-[#FF3366]"></i> Adobe InDesign</span>
+                        <span class="text-sm font-bold text-neon group-hover:scale-110 transition-transform">85%</span>
+                    </div>
+                    <div class="w-full bg-slate-900 rounded-full h-2 border border-slate-700 shadow-inner">
+                        <div class="bg-gradient-to-r from-neon to-purple-400 h-1.5 mt-[1px] ml-[1px] rounded-full shadow-[0_0_10px_rgba(147,51,234,0.6)]" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-sm font-medium text-slate-200 flex items-center gap-2"><i class="fa-brands fa-adobe text-[#9999FF]"></i> Adobe Premiere</span>
+                        <span class="text-sm font-bold text-neon group-hover:scale-110 transition-transform">50%</span>
+                    </div>
+                    <div class="w-full bg-slate-900 rounded-full h-2 border border-slate-700 shadow-inner">
+                        <div class="bg-gradient-to-r from-neon to-purple-400 h-1.5 mt-[1px] ml-[1px] rounded-full shadow-[0_0_10px_rgba(147,51,234,0.6)]" style="width: 50%"></div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-sm font-medium text-slate-200 flex items-center gap-2"><i class="fa-solid fa-pen-nib text-slate-400"></i> Font Creation</span>
+                        <span class="text-sm font-bold text-neon group-hover:scale-110 transition-transform">85%</span>
+                    </div>
+                    <div class="w-full bg-slate-900 rounded-full h-2 border border-slate-700 shadow-inner">
+                        <div class="bg-gradient-to-r from-neon to-cyan-300 h-1.5 mt-[1px] ml-[1px] rounded-full shadow-[0_0_10px_rgba(14,165,233,0.6)]" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-sm font-medium text-slate-200 flex items-center gap-2"><i class="fa-solid fa-wand-magic-sparkles text-slate-400"></i> AI Image Generation</span>
+                        <span class="text-sm font-bold text-neon group-hover:scale-110 transition-transform">90%</span>
+                    </div>
+                    <div class="w-full bg-slate-900 rounded-full h-2 border border-slate-700 shadow-inner">
+                        <div class="bg-gradient-to-r from-neon to-cyan-300 h-1.5 mt-[1px] ml-[1px] rounded-full shadow-[0_0_10px_rgba(14,165,233,0.6)]" style="width: 90%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
